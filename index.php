@@ -1,0 +1,365 @@
+<?php 
+include "db.php";
+
+
+
+$query = "SELECT * FROM portfolio_RonyZrihen";
+$result = mysqli_query($connection,$query);
+
+if(!$result){
+    die("DB query failed.");
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Lonely Bootstrap Template - Index</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/RZ-logos_black.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i&subset=cyrillic" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Lonely
+  * Updated: May 30 2023 with Bootstrap v5.3.0
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-lonely/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column align-items-center justify-content-center">
+        <h1>Hi, I'm Rony!</h1>
+        <h2>I am a software engineer student</h2>
+        <a href="#about" class="btn-get-started scrollto"><i class="bi bi-chevron-double-down"></i></a>
+    </section>
+    <!-- End Hero -->
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <div class="logo">
+                <h1><a href="index.html">Rony Zrihen</a></h1>
+    
+    
+            </div>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="#resume">Resume</a></li>
+                    <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+    
+
+        </div>
+    </header>
+    
+
+    <main id="main">
+
+        
+        <section id="about" class="about">
+            <div class="container">
+
+                <div class="row no-gutters">
+                    <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
+                    <div class="col-xl-7 ps-0 ps-lg-5 pe-lg-1 d-flex align-items-stretch">
+                        <div class="content d-flex flex-column justify-content-center">
+                            <h3>Fullstack developer student</h3>
+                            <p>
+                                Hello! My name is Rony, Im a second year student at the department of software engineering at Shenkar.<br> I work at 'Gav systems' as a system operator and maintenance at the network operation center . <br>im highly motivated, like making my own mistakes and
+                                finding the answers myself. most of all i love learning and really enjoy every little success.
+                            </p>
+                        </div>
+        
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+
+        
+        <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+         
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">PHP <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">C++ <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">MySQL <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+        <!-- ======= Resume Section ======= -->
+        <section id="resume" class="resume section-bg">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Resume</h2>
+                    <h4><i class="bi bi-file-earmark-person-fill"></i>&nbsp;<a href="Rony-zrihen_resume.pdf">Download Resume</a></h4>
+                    <p> I have over five years of experience in the field of communication and computing in a NOC position. I have worked with monitoring and control systems, handling storage, network, and computing issues. During my military service, I served
+                        as a team leader in control center. I have a strong work ethic and high motivation. I am a software engineering student aspiring to learn, grow, and gain more experience.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+
+
+                        <h3 class="resume-title">Education</h3>
+                        <div class="resume-item">
+                            <h4>High School</h4>
+                            <h5>2010 - 2016</h5>
+                            <p><em>Hakfar Hayarok, Ramat HaSharon</em></p>
+                            <p>Graduated with distinction. Full matriculation certificate with 3 units of mathematics and 5 units of English.</p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>IDF</h4>
+                            <h5>2017 - 2018</h5>
+                            <p><em>Certifications</em></p>
+                            <ul>
+                                <li>Computer Network Administration.</li>
+                                <li>Cyber Security Administrator.</li>
+                                <li>LINUX - John Bryce College.</li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Shenkar College of Engineering, Design and Art.</h4>
+                            <h5>2021 - Present</h5>
+                            <p><em>Relevent Courses</em></p>
+                            <p>b.sc, software engineering</p>
+                            <ul>
+                                <li>Computer Network Administration.</li>
+                                <li>Cyber Security Administrator.</li>
+                                <li>LINUX - John Bryce College.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="resume-title">Professional Experience</h3>
+                        <div class="resume-item">
+                            <h4>IDF | Unit 456 Liaison Battalion, Home Front Command | Network and NOC Team</h4>
+                            <h5>2017 - 2019</h5>
+                            <p>Position: Head of NOC (Network Operations Center) - Team Leader Managed and supervised a team of 6 individuals responsible for monitoring and controlling the various networks of the IDF (Israel Defense Forces) spread across
+                                the country. Team responsibilities included:</p>
+                            <ul>
+                                <li>Managing and maintaining the network infrastructure for the battalion.</li>
+                                <li>Monitoring the functionality of the central communication cores of the IDF's Home Front Command (Pikud Haoref) .</li>
+                                <li>Monitoring and troubleshooting network issues to ensure smooth communication and connectivity.</li>
+                                <li>Supporting the battalion's operations by providing technical assistance and resolving network-related problems.</li>
+                                <li>Experienced with remote connections, switch configuration, and managing video conference systems (VC).</li>
+                            </ul>
+                            <p>The role required a high level of responsibility, seriousness, and attentiveness. Additionally, it provided an opportunity to gain managerial experience and interpersonal skills.</p>
+                            </p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Graphic design specialist</h4>
+                            <h5>2019 - Present</h5>
+                            <p>
+                                <ul>
+                                    <li>Monitoring and exercising control over a diverse array of servers and intricate systems.</li>
+                                    <li>Swiftly and effectively resolving issues in real-time while attending to the requirements of professional teams.</li>
+                                    <li>Proficiently handling tasks related to storage management, database administration (DBA), virtualization with VMware, messaging system with RabbitMQ, SQL database management, and operating systems like Linux and Windows.</li>
+                                    <li>Partial expertise in utilizing the powerful analytical capabilities of Kibana for comprehensive system analysis and visualization.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Resume Section -->
+
+        <!-- ======= Portfolio Section ======= -->
+        <section id="portfolio" class="portfolio section-bg">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Portfolio</h2>
+                    <p>Here you will find all my compelte and ongoing projects and exercises </p>
+                </div>
+
+                <div class="row portfolio-container">
+                <?php while($row = mysqli_fetch_assoc($result)){
+
+                echo "<div class='col-lg-4 col-md-6 portfolio-item'>";
+                echo "<div class='portfolio-wrap'>";
+                echo "<img src='".$row['image']."' class='img-fluid' alt=''>";
+                echo "<div class='portfolio-info'>";
+                echo "<h4>".$row['name']."</h4>";
+                echo "<p>".$row['desc']."</p>";
+                echo "</div>";
+                echo "<div class='portfolio-links'>";
+                echo "<a href='".$row['gitHub']."' data-gallery='portfolioGallery' title='App 2'><i class='bi bi-github'></i></a>";
+                echo ' <a href="'.$row['link'].'" title="More Details"><i class="bx bx-link"></i></a>';
+                echo '</div>';
+                echo  '</div>';
+                echo '</div>';
+                }
+               ?>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End Portfolio Section -->
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact section-bg">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Contact</h2>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-12 col-md-4">
+                        <div class="contact-about">
+                            <h3>Rony Zrihen</h3>
+
+                            <div class="social-links">
+                                <a href="https://www.instagram.com/rony.zrihen/" class="instagram"><i class="bi bi-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/rony-zrihen-4b155b283/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                                <a href="https://github.com/ronyzrihen" class="linkedin"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="info">
+
+                            <div class="d-flex align-items-center mt-4">
+                                <i class="bi bi-envelope"></i>
+                                <p>Ronyzn3@hotmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End Contact Section -->
+
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Lonely</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+              
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                    <br>
+                    <a href="https://www.shenkar.ac.il/he/departments/engineering-software-department">תואר ראשון בהנדסת תוכנה
+                      בשנקר</a>
+            </div>
+        </div>
+    </footer>
+    <!-- End  Footer -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <?php mysqli_close($connection);?>
+</body>
+
+</html>
