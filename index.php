@@ -236,7 +236,7 @@ if(!$result){
                             </p>
                         </div>
                         <div class="resume-item">
-                            <h4>Graphic design specialist</h4>
+                            <h4>Gav systems | Noc Position</h4>
                             <h5>2019 - Present</h5>
                             <p>
                                 <ul>
